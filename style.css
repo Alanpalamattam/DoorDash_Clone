@@ -1,0 +1,177 @@
+body{
+    background-color: orangered;
+    margin: 0px;
+    
+}
+@font-face {
+    font-family: 'extrabold';
+    src: url(assets/TTNorms-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(assets/TTNorms-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(assets/TTNorms-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url(assets/TTNorms-Medium\ .woff2);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin:0px;
+  max-height:90px;
+  padding: 0px;
+}
+
+.icon span {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 20px 0px 0px 0px;
+}
+.icontext span h2{
+   font-family:'bold';
+}
+.icontext span h4{
+   font-family:'regular';
+}
+.icon img{
+    width: auto;
+    max-height: 70px;
+}
+.icon span img{
+    width: 20%;
+    height: auto;
+}
+button.open {
+    background-color: rgb(131, 41, 41);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 20px;
+    font-size: 0.75em;
+    cursor: pointer;
+    border-radius: 20px;
+    align-items: right;
+}
+.icon div.icontext{
+    width: 100%;
+}
+.openbutton{
+    text-align: right;
+    font-family: 'bold';
+
+}
+.homeimg img{
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    height: 550px;
+    grid-column: 1/9;
+    position: relative;
+   
+}
+.homeimg{
+    display:grid;
+    grid-template-columns:repeat(8, 1fr);
+}
+
+.companyname img{
+    position: absolute;
+    width: auto;
+    height: 18px;
+    color: white;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.homeimg h2{
+    position: absolute;
+    color: white;
+    top: 42%;  /* Add this to position from the top */
+    text-align: center;
+    font-family: 'bold';
+    font-size: 1.3em;
+    width: 100%;
+    left: 50%;
+    letter-spacing: 1.2px;
+    transform: translateX(-50%);
+}
+.location{
+    position: absolute;
+    color: white;
+    top: 58%;
+    font-size: 0.8em;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.locationtext{
+    display: flex;
+    align-items: center;
+}
+.location img{
+    width: 20px;
+    height: 20px;
+}
+.homeimg label{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    color: rgb(74, 37, 37);
+}
+.homeimg input{
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px;
+    position: absolute;
+    top:65%;
+    left: 30%;
+    border: none;
+    font-size: 10px;
+}
+
+.login {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 10;
+}
+
+.login ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.login ul li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.loginbutton, .openapp {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'medium';
+    font-size: 0.9em;
+}
+
+.openapp {
+    background-color: rgb(168, 23, 4);
+    color: white;
+}
