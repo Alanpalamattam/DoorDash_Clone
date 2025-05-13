@@ -1,7 +1,10 @@
 body{
-    background-color: orangered;
+    background-color: white;
     margin: 0px;
     
+}
+:root{
+    --primary:rgb(236,33,33);
 }
 @font-face {
     font-family: 'extrabold';
@@ -22,6 +25,7 @@ body{
     font-family: 'medium';
     src: url(assets/TTNorms-Medium\ .woff2);
 }
+
 
 .icon {
   display: flex;
@@ -51,8 +55,8 @@ body{
     width: 20%;
     height: auto;
 }
-button.open {
-    background-color: rgb(131, 41, 41);
+.open-btn {
+    background-color: var(--primary);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -65,7 +69,7 @@ button.open {
 .icon div.icontext{
     width: 100%;
 }
-.openbutton{
+.openbutton button{
     text-align: right;
     font-family: 'bold';
 
@@ -75,14 +79,12 @@ button.open {
     object-fit:cover;
     object-position: center;
     height: 550px;
-    grid-column: 1/9;
     position: relative;
    
 }
-.homeimg{
-    display:grid;
+/* .homeimg{
     grid-template-columns:repeat(8, 1fr);
-}
+} */
 
 .companyname img{
     position: absolute;
@@ -106,39 +108,51 @@ button.open {
     letter-spacing: 1.2px;
     transform: translateX(-50%);
 }
-.location{
+
+.location {
     position: absolute;
-    color: white;
-    top: 58%;
-    font-size: 0.8em;
-    width: 100%;
-    height: auto;
+    bottom: 37%;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    max-width: 415px;
 }
-.locationtext{
+
+.location .locationtext {
+    grid-column: 2/ 8;
     display: flex;
     align-items: center;
+    background: white;
+    padding: 10px 20px;
+    font-size: 15px;;
+    border-radius: 30px;
+    width: 100%;
 }
-.location img{
-    width: 20px;
-    height: 20px;
-}
-.homeimg label{
-    position: absolute;
-    top: 65%;
-    left: 25%;
-    color: rgb(74, 37, 37);
-}
-.homeimg input{
-    width: 150px;
-    border-radius: 50px;
-    padding: 10px;
-    position: absolute;
-    top:65%;
-    left: 30%;
+
+.location input {
     border: none;
-    font-size: 10px;
+    width:100%;
+    padding: 5px 8px ;
+    font-family: 'medium';
+    outline: none;
+    font-size: 1.2em;
+    height: auto;
+}
+
+.locationtext .search {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+.locationtext .rightarrow{
+    width: 26px;
+    justify-self: flex-end;
+    height: auto;
+
 }
 
 .login {
@@ -167,11 +181,206 @@ button.open {
     padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
-    font-family: 'medium';
+    font-family: 'bold';
     font-size: 0.9em;
 }
 
 .openapp {
-    background-color: rgb(168, 23, 4);
+    background-color:var(--primary);
     color: white;
+}
+.loginbutton2{
+    position:absolute;
+    bottom:30%;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'medium';
+    font-size: 0.9em;
+    box-shadow:  0.2 rgba(0,0,0,0.2);
+    
+}
+.loginbutton2 button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'bold';
+    margin-left: -7px;
+    font-size: 1em;
+}
+.loginbutton2 img{
+    width:15px;
+    height:auto;
+    bottom: -2px;
+}
+/* main:after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+.sec2{
+    width: 100%;
+    justify-items: center;
+    background: white;
+    
+}
+.sec2content{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 20px;;
+}
+.sec2content2{
+    display: flex;
+   
+}
+.sec2img img{
+    width: 40px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 10%;
+    height: auto;
+ 
+}
+.sec2text{
+   text-align: left;
+    padding: 0px 10px;
+}
+.sec2text h2{
+    font-family: 'bold';
+    font-size:18px;
+    margin:0;
+}
+.sec2star{
+    display: flex;
+    align-items: center;
+    margin: 2px 0 0;
+}
+.sec2text h4{
+    font-family: 'regular';
+    font-size:14px;
+    color:#606060;
+    margin:2px 0 0 4px;;
+
+}
+.sec2text h3{
+ font-size:14px;
+    color:#606060;
+    margin:0 0 0 4px;
+}
+.sec2but{
+    width: 100%;
+}
+.continuebut{
+    background: #eb1700;
+    color:white;
+    margin:20px 0 0 0;
+    border-radius: 20px;
+    border:none;
+    width: 100%;
+    padding: 10px 08px ;
+    font-family: 'bold';
+    font-size: 17px;;
+}
+.sec3A{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.sec3{
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.sec3content{
+    display: flex;
+    padding: 16px;
+}
+.sec3 img{
+    width:88px;
+    height: 88px;
+    justify-self: top;
+    margin: 0px 32px 0 0;
+}
+.sec3 h2{
+    font-size:32px;
+    font-family:'bold';
+    margin:0;
+    color:#191919
+}
+.sec3 h3{
+    font-size: 18px;
+    font-family: 'regular';
+    line-height: 25px;
+}
+.sec3 h4{
+    font-size: 14px;
+    color:#eb1700;
+    font-family: 'bold';
+    margin: 12px 0 0;
+}
+.sec3 h4 img{
+    width: 16px;
+    height:16px;
+    margin-bottom:-5px;
+}
+.sec4{
+    background-color: antiquewhite;
+    margin: 0 0 -300px;
+    padding: 320px 20px 20px;
+}
+
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 16px;
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex: 1;
+}
+.left-section .logo{
+    width: 44px;
+    height: auto;
+}
+.left-section h2 {
+  width: 250px;
+}
+
+.heron {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.open-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
