@@ -79,7 +79,7 @@ body{
     width: 100%;
     object-fit:cover;
     object-position: center;
-    height: 560px;
+    height: 550px;
     position: relative;
    
 }
@@ -92,28 +92,31 @@ body{
     width: auto;
     height: 17px;
     color: white;
+    align-items: center;
     top: 273px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
 }
-.homeimg h2{
+.homeimg h1{
     position: absolute;
     color: white;
-    top: 295px;  /* Add this to position from the top */
+    top: 296px;  /* Add this to position from the top */
     text-align: center;
     font-family: 'bold';
-    font-size: 1.3em;
     width: 100%;
     left: 50%;
-    letter-spacing: 1.2px;
+    max-width: 350px;
+    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 28px;
     transform: translateX(-50%);
 }
 
 .location {
     position: absolute;
     top: 390px;
-    left: 50%;
+    left: 52.5%;
     transform: translateX(-50%);
     width: 100%;
     display: grid;
@@ -128,10 +131,13 @@ body{
     display: flex;
     align-items: center;
     background: white;
-    padding: 15px 20px;
-    font-size: 15px;;
+    padding: 15px 20px 15px 16px;
+    font-size: 14px;;
     border-radius: 30px;
-    width: 100%;
+    width: 94.2%;
+    color: #000000;
+    font-weight:550;
+    
 }
 
 .location input {
@@ -139,8 +145,10 @@ body{
     width:100%;
     /* padding: 5px 8px ; */
     font-family: 'medium';
+    font-weight:500;
     outline: none;
-    font-size: 15px;
+    color: #4b4444;
+    font-size: 16px;
     height: auto;
 }
 
@@ -155,12 +163,13 @@ body{
     width: 26px;
     justify-self: flex-end;
     height: auto;
+    
 
 }
 
 .login {
     position: absolute;
-    top: 105px;
+    top: 111px;
     right: 20px;
     z-index: 10;
 }
@@ -181,11 +190,10 @@ body{
     background-color: white;
     color: black;
     border: none;
-    padding: 8px 16px;
+    padding: 7px 12px;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'bold';
-    font-size: 0.9em;
 }
 
 .openapp {
@@ -194,14 +202,14 @@ body{
 }
 .loginbutton2{
     position:absolute;
-    top:460px;
+    top:459px;
     left:50%;
     transform:translateX(-50%);
     background-color: white;
     color: black;
     border: none;
     height: 20px;
-    padding: 5px 10px;
+    padding: 5.9px 5px 5px 12px;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'medium';
@@ -218,9 +226,10 @@ body{
     font-size: 1em;
 }
 .loginbutton2 img{
-    width: 18px;
-    height: 14px;
-    bottom: -2px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2.5px;
+    padding-right: 2px;
 }
 /* main:after{
     content: "";
@@ -231,38 +240,59 @@ body{
     width: 100%;
     justify-items: center;
     background: white;
+    max-width: 400px;
+    margin: 0px auto;
+    flex: 1 0 auto;
     
 }
+
 .sec2content{
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    display: block;
+    width: 320px;
     background-color: #f7f7f7;
     padding: 20px;
-    margin-top: 15px;
     align-items: center;
-    border-radius: 20px;;
+    margin-top: 20px;
+    border-radius: 12px;;
 }
 .sec2content2{
     display: flex;
+
    
 }
-.sec2img img{
-    width: 40px;
-    padding: 8px;
+
+.sec2img{
+    width: 60px !important;
+    height: 60px !important;
+    border-radius:12px;
+    margin-right: 8px;
+    justify-items: center;
     background-color: white;
-    border-radius: 10%;
-    height: auto;
+    align-items: center;
+}
+.sec2img img{
+    height: 32.85px;
+    width:34px;
+    padding:14px 8px 8px 11px;
+
+        padding-right:0px ;
+
+   fill: none;
+    background-color: white;
  
 }
 .sec2text{
-   text-align: left;
-   line-height: 18px;;
-    padding: 0px 10px;
+   max-width: 100%;
+    display: block;
 }
 .sec2text h2{
     font-family: 'bold';
-    font-size:16px;
+    font-size:18px;
+    line-height:30px;
+    letter-spacing: -0.01px;
     margin:0;
+    padding:0px;
 }
 .sec2star{
     display: flex;
@@ -287,13 +317,13 @@ body{
 .continuebut{
     background: #eb1700;
     color:white;
-    margin:20px 0 0 0;
+    margin:16px 0 0 0;
     border-radius: 20px;
     border:none;
     width: 100%;
-    padding: 10px 08px ;
+    padding: 13px 08px ;
     font-family: 'bold';
-    font-size: 17px;;
+    font-size: 16px;
 }
 .sec3A{
     width: 100%;
@@ -342,7 +372,6 @@ body{
 }
 
 .header2 {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
@@ -377,7 +406,7 @@ body{
   background-color: var(--primary);
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 6.3px 12px 7px 12px;
   border-radius: 999px;
   font-size: 16px;
   font-family: 'bold';
@@ -401,6 +430,10 @@ body{
 }
 .sec4Ab{
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 .sec4Aa img,.sec4Ba img,.sec4Bz img{
     width: 100%;
@@ -411,18 +444,20 @@ body{
 .sec4Aa h2,.sec4Ba h2,.sec4Bz h2,.sec4Ca h2{
     text-align: left;
     min-width:90%;
-    margin:20px  0 10px;
+    margin:20px 0 0 0;
     font-family: 'bold';
     font-size: 24px;
 }
 .sec4Aa .spn4,.sec4Ba .spn4,.sec4Ca .spn4,.sec4Bz .spn4{
     font-family: 'bold';
     font-size: 18px;
+    margin:10 0 0 0;
     font-weight: 200px;
 }
 .sec4Aa .spn4b,.sec4Ba .spn4b,.sec4Ca .spn4b,.sec4Bz .spn4b{
     font-family: 'medium';
     font-size: 14px;
+    margin: 10px 0 0 0;
     font-weight:500;
     line-height: 25px;
     text-align: left;
@@ -488,7 +523,7 @@ body{
     margin-top: auto;
     flex-direction: column;
     margin-bottom: auto;
-    max-width: 650px;   
+    max-width: 550px;   
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -791,6 +826,7 @@ footer h2,h3{
     .search{
         background-image:  url(/Doordash/assets/loc.svg);
         width: 32px;
+        margin-right:12px;
         height: 24px;
      }
      .locationtext .rightarrow{
