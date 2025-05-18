@@ -927,7 +927,7 @@ footer h2,h3{
     font-size: 32px !important;
     max-width: 500px !important; 
    }
-   .sec4F{
+   /* .sec4F{
     flex-direction: column;
     flex-flow: wrap;
     width: 100%;
@@ -936,7 +936,7 @@ footer h2,h3{
    .sec4Fa{
     max-width:50%;
     min-width: 50%;
-   }
+   } */
    .footerAa{
     flex-direction: row;
    }
